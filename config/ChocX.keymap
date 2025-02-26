@@ -46,6 +46,11 @@
 
         default_layer {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// |  Q  |  W  |  E  |  R  |  T  |             	|  Y  |  U   |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G  |  	 	    |  H  |  J   |  K  |  L  |  -  |
+// |  Z  |  X  |  C  |  V  |  B  |   		    |  N  |  M   |  ,  |  .  |  /  | 
+// | SHFT| CTRL| ALT | LNG | DEL | ENT |        | SPC | BSPC | WIN | TAB | ESC |
 &kp Q           &kp W      &kp E         &kp R                      &kp T                       &kp Y        &kp U            &kp I         &kp O       &kp P
 &kp A           &kp S      &kp D         &kp F                      &kp G                       &kp H        &kp J            &kp K         &kp L       &kp MINUS
 &kp Z           &kp X      &kp C         &kp V                      &kp B                       &kp N        &kp M            &kp COMMA     &kp PERIOD  &kp SLASH
@@ -55,6 +60,12 @@
 
         layer_1 {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// |  F1  |  F3  |  F4  |  F5  |  F6  |                |  F2  |  F7  |  F8  |  F9  |  F10  | 
+// |      |      |  UP  |      | PG_UP|   			   | COPY | BTN1 | BTN3 | BTN2 |  F11  |
+// |      | LEFT | DOWN | RGHT | PG_DN|                | PSTE | BTN4 | BTN5 |      |  F12  |
+// |      |      |      |      |      |      |   	   |      |      |      |      |       |
+
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
@@ -64,6 +75,11 @@
 
         layer_2 {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// | TAB |  7  |  8  |  9  |  =  |   			|  (  |  )  |  &  |  ^  |  \  |
+// |  *  |  4  |  5  |  6  |  +  |   			|  [  |  _  |  @  |  :  |  ;  |
+// |  /  |  1  |  2  |  3  |  -  |   			|  ]  |  !  |  ?  |  `  |  "  |
+// | ESC |  0  |  .  | BS  | DEL | ENT |   		|  _  |  +  |  {  |  }  |     |
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
@@ -73,6 +89,12 @@
 
         layer_3 {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// |    |    |    |    |    |   			|    |    |    |    |     |
+// |    |    |    |    |    |   			|    |    |    |    |     |
+// |    |    |    |    |    |   			|    |    |    |    |     |
+// |    |    |    |    |    |               |    |    |    |    |     |
+// |    |    |    |    |    |    |          |    |    |    |    | To5 |
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
@@ -82,6 +104,12 @@
 
         layer_4 {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// |    |    |    |    |    |   			|    |    |    |    |    |
+// |    |    |    |    |    |   			|    |    |    |    |    |
+// |    |    |    |    |    |   			|    |    |    |    |    |
+// |    |    |    |    |    |               |    |    |    |    |    |
+// |    |    |    |    |    |    |          |    |    |    |    |    |
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
@@ -91,6 +119,12 @@
 
         layer_5 {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// |    |     |  W  |     |    |   			   |    |    |    |    |     |
+// |    |  A  |  S  |  D  |    |   			   |    |    |    |    |     |
+// |    |     |     |     |    |   			   |    |    |    |    |     |
+// |    |     |     |     |    |               |    |    |    |    |     |
+// |    |     |     |     |    |    |          |    |    |    |    | To3 |
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
@@ -100,6 +134,11 @@
 
         MOUSE {
             bindings = <
+// -----------------------------------------------------------------------------------------
+// |    |    |    |    |    |             |    |      |      |      |    |
+// |    |    |    |    |    |   		  |    | BTN1 | BTN3 | BTN2 |    |
+// |    |    |    |    |    |             |    |      |      |      |    |
+// |    |    |    |    |    |    |        |    |      |      |      |    |
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
