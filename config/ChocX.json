@@ -1,4 +1,6 @@
 {
+  "id": "ChocX",
+  "name": "ChocX",
   "layouts": {
     "default_layout": {
       "name": "default_layout",
@@ -49,5 +51,6 @@
         { "row": 4, "col": 12, "x": 12, "y": 4 }
       ]
     }
-  }
+  },
+  "sensors": []
 }
