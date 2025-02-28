@@ -16,6 +16,26 @@
 / {
     combos { compatible = "zmk,combos"; };
 
+macros {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
+        };
+    };
+
+    behaviors {
+        lt_to_layer_0: lt_to_layer_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,7 +64,7 @@
             bindings = <
 &kp F1  &kp F3          &kp F4    &kp F5           &kp F6                      &kp F2       &kp F7    &kp F8    &kp F9    &kp F10
 &trans  &msc SCRL_LEFT  &kp UP    &msc SCRL_RIGHT  &msc SCRL_UP                &kp K_COPY   &mkp MB1  &mkp MB3  &mkp MB2  &kp F11
-&trans  &kp LEFT        &kp DOWN  &kp RIGHT        &msc SCRL_DOWN              &kp K_PASTE  &mkp MB4  &mkp MB5  &trans    &kp F12
+&trans  &kp LEFT        &kp DOWN  &kp RIGHT        &msc SCRL_DOWN              &kp K_PASTE  &mkp MB4  &mkp MB5  &kp MINUS &kp F12
 &trans  &trans          &trans    &trans           &trans          &trans      &trans       &trans    &trans    &trans    &trans
             >;
         };
