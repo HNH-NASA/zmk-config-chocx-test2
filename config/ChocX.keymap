@@ -24,12 +24,20 @@
             label = "TO_LAYER_0";
         };
 
-        JRANG: JRANG {
+        J_RANG: J_RANG {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lt 3 GRAVE>, <&macro_press>;
+            bindings = <&kp GRAVE>, <&macro_tap>;
 
-            label = "JRANG";
+            label = "J_RANG";
+        };
+
+        J_PLUS: J_PLUS {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&macro_tap>;
+
+            label = "J_PLUS";
         };
     };
 
@@ -37,6 +45,15 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
+            bindings = <&mo>, <&to_layer_0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        lt_L3andJLANG: lt_L3andJLANG {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_L3ANDJLANG";
             bindings = <&mo>, <&to_layer_0>;
 
             #binding-cells = <2>;
@@ -55,10 +72,10 @@
             // | SHFT| CTRL| ALT | LNG | DEL | ENT |          | SPC | BSPC | WIN | TAB | ESC |
 
             bindings = <
-&kp Q       &kp W      &kp E     &kp R   &kp T                     &kp Y        &kp U       &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F   &kp G                     &kp H        &kp J       &kp K      &kp L       &kp MINUS
-&kp Z       &kp X      &kp C     &kp V   &kp B                     &kp N        &kp M       &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LSHIFT  &kp LCTRL  &kp LALT  &JRANG  &lt 2 DEL  &lt 1 RET      &lt 1 SPACE  &lt 2 BSPC  &kp LWIN   &kp TAB     &kp ESC
+&kp Q       &kp W      &kp E     &kp R                   &kp T                     &kp Y        &kp U       &kp I      &kp O       &kp P
+&kp A       &kp S      &kp D     &kp F                   &kp G                     &kp H        &kp J       &kp K      &kp L       &kp MINUS
+&kp Z       &kp X      &kp C     &kp V                   &kp B                     &kp N        &kp M       &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LSHIFT  &kp LCTRL  &kp LALT  &lt_L3andJLANG 3 GRAVE  &lt 2 DEL  &lt 1 RET      &lt 1 SPACE  &lt 2 BSPC  &kp LWIN   &kp TAB     &kp ESC
             >;
         };
 
@@ -86,7 +103,7 @@
 
             bindings = <
 &kp TAB    &kp N7  &kp N8   &kp N9    &kp LS(KP_EQUAL)              &kp LPAR           &kp RPAR   &kp AMPS     &kp CARET  &kp BSLH
-&kp ASTRK  &kp N4  &kp N5   &kp N6    &kp KP_PLUS                   &kp LEFT_BRACKET   &kp UNDER  &kp AT_SIGN  &kp COLON  &kp SEMI
+&kp ASTRK  &kp N4  &kp N5   &kp N6    &J_PLUS                       &kp LEFT_BRACKET   &kp UNDER  &kp AT_SIGN  &kp COLON  &kp SEMI
 &kp SLASH  &kp N1  &kp N2   &kp N3    &kp KP_MINUS                  &kp RIGHT_BRACKET  &kp EXCL   &kp QMARK    &kp GRAVE  &kp DQT
 &kp ESC    &kp N0  &kp DOT  &kp BSPC  &trans            &trans      &trans             &trans     &trans       &trans     &trans
             >;
