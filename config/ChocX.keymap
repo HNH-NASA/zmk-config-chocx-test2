@@ -57,10 +57,10 @@
             // | ESC |  0  |  .  | BS  |     |    |          |  _  |  +  |  {  |  }  |     |
 
             bindings = <
-&kp TAB    &kp N7  &kp N8   &kp N9    &kp LS(MINUS)              &kp LPAR  &kp RPAR           &kp AMPS     &kp CARET  &kp BSLH
-&kp ASTRK  &kp N4  &kp N5   &kp N6    &kp PLUS                   &kp LBKT  &kp LS(BACKSLASH)  &kp AT_SIGN  &kp COLON  &kp SEMI
-&kp SLASH  &kp N1  &kp N2   &kp N3    &kp MINUS                  &kp RBKT  &kp EXCL           &kp QMARK    &kp GRAVE  &kp DQT
-&kp ESC    &kp N0  &kp DOT  &kp BSPC  &trans         &trans      &trans    &trans             &trans       &trans     &trans
+&kp TAB    &kp N7  &kp N8   &kp N9    &kp LS(KP_EQUAL)              &kp LPAR  &kp RPAR   &kp AMPS     &kp CARET  &kp BSLH
+&kp ASTRK  &kp N4  &kp N5   &kp N6    &kp KP_PLUS                   &kp LBKT  &kp UNDER  &kp AT_SIGN  &kp COLON  &kp SEMI
+&kp SLASH  &kp N1  &kp N2   &kp N3    &kp KP_MINUS                  &kp RBKT  &kp EXCL   &kp QMARK    &kp GRAVE  &kp DQT
+&kp ESC    &kp N0  &kp DOT  &kp BSPC  &trans            &trans      &trans    &trans     &trans       &trans     &trans
             >;
         };
 
