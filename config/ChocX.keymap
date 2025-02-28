@@ -16,7 +16,7 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-macros {
+    macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -64,7 +64,7 @@ macros {
             bindings = <
 &kp F1  &kp F3          &kp F4    &kp F5           &kp F6                      &kp F2       &kp F7    &kp F8    &kp F9    &kp F10
 &trans  &msc SCRL_LEFT  &kp UP    &msc SCRL_RIGHT  &msc SCRL_UP                &kp K_COPY   &mkp MB1  &mkp MB3  &mkp MB2  &kp F11
-&trans  &kp LEFT        &kp DOWN  &kp RIGHT        &msc SCRL_DOWN              &kp K_PASTE  &mkp MB4  &mkp MB5  &kp MINUS &kp F12
+&trans  &kp LEFT        &kp DOWN  &kp RIGHT        &msc SCRL_DOWN              &kp K_PASTE  &mkp MB4  &mkp MB5  &trans    &kp F12
 &trans  &trans          &trans    &trans           &trans          &trans      &trans       &trans    &trans    &trans    &trans
             >;
         };
@@ -77,10 +77,10 @@ macros {
             // | ESC |  0  |  .  | BS  |     |    |          |  _  |  +  |  {  |  }  |     |
 
             bindings = <
-&kp TAB    &kp N7  &kp N8   &kp N9    &kp LS(KP_EQUAL)              &kp LPAR  &kp RPAR   &kp AMPS     &kp CARET  &kp BSLH
-&kp ASTRK  &kp N4  &kp N5   &kp N6    &kp KP_PLUS                   &kp LBKT  &kp UNDER  &kp AT_SIGN  &kp COLON  &kp SEMI
-&kp SLASH  &kp N1  &kp N2   &kp N3    &kp KP_MINUS                  &kp RBKT  &kp EXCL   &kp QMARK    &kp GRAVE  &kp DQT
-&kp ESC    &kp N0  &kp DOT  &kp BSPC  &trans            &trans      &trans    &trans     &trans       &trans     &trans
+&kp TAB    &kp N7  &kp N8   &kp N9    &kp LS(KP_EQUAL)              &kp LPAR           &kp RPAR   &kp AMPS     &kp CARET  &kp BSLH
+&kp ASTRK  &kp N4  &kp N5   &kp N6    &kp KP_PLUS                   &kp LEFT_BRACKET   &kp UNDER  &kp AT_SIGN  &kp COLON  &kp SEMI
+&kp SLASH  &kp N1  &kp N2   &kp N3    &kp KP_MINUS                  &kp RIGHT_BRACKET  &kp EXCL   &kp QMARK    &kp GRAVE  &kp DQT
+&kp ESC    &kp N0  &kp DOT  &kp BSPC  &trans            &trans      &trans             &trans     &trans       &trans     &trans
             >;
         };
 
