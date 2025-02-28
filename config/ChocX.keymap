@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -152,22 +151,6 @@
 
             label = "J_GRAVE";
         };
-
-        kp_IMEtoggle1: IMEtoggle {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LCTRL &kp SPACE>, <&macro_press>;
-
-            label = "IMETOGGLE";
-        };
-
-        kp_IMEtoggle2: kp_IMEtoggle2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kt LEFT_SHIFT &kp SPACE>, <&macro_tap>;
-
-            label = "KP_IMETOGGLE2";
-        };
     };
 
     behaviors {
@@ -175,24 +158,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        lt_L3andJLANG: lt_L3andJLANG {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_L3ANDJLANG";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        lt_IMEtoggle: lt_IMEtoggle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_IMETOGGLE";
-            bindings = <&mo>, <&kp_IMEtoggle2>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
