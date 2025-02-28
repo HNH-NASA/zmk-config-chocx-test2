@@ -224,7 +224,7 @@
 &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &bl BL_TOG       &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans           &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mo 5
+&trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &to 5
             >;
         };
 
@@ -256,7 +256,7 @@
 &trans  &trans  &kp W   &trans  &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &kp A   &kp S   &kp D   &trans              &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mo 0
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &to 0
             >;
         };
 
