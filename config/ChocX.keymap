@@ -153,12 +153,20 @@
             label = "J_GRAVE";
         };
 
-        kp_IMEtoggle: IMEtoggle {
+        kp_IMEtoggle1: IMEtoggle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kt LCTRL &kp SPACE>, <&macro_press>;
 
             label = "IMETOGGLE";
+        };
+
+        kp_IMEtoggle2: kp_IMEtoggle2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kt LEFT_SHIFT &kp SPACE>, <&macro_tap>;
+
+            label = "KP_IMETOGGLE2";
         };
     };
 
@@ -184,7 +192,7 @@
         lt_IMEtoggle: lt_IMEtoggle {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_IMETOGGLE";
-            bindings = <&mo>, <&kp_IMEtoggle>;
+            bindings = <&mo>, <&kp_IMEtoggle2>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
