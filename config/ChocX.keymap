@@ -23,6 +23,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        JRANG: JRANG {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&lt 3 GRAVE>;
+            label = "JRANG";
+        };
     };
 
     behaviors {
@@ -47,10 +54,10 @@
             // | SHFT| CTRL| ALT | LNG | DEL | ENT |          | SPC | BSPC | WIN | TAB | ESC |
 
             bindings = <
-&kp Q       &kp W      &kp E     &kp R        &kp T                     &kp Y        &kp U       &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F        &kp G                     &kp H        &kp J       &kp K      &kp L       &kp MINUS
-&kp Z       &kp X      &kp C     &kp V        &kp B                     &kp N        &kp M       &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LSHIFT  &kp LCTRL  &kp LALT  &lt 3 LANG5  &lt 2 DEL  &lt 1 RET      &lt 1 SPACE  &lt 2 BSPC  &kp LWIN   &kp TAB     &kp ESC
+&kp Q       &kp W      &kp E     &kp R   &kp T                     &kp Y        &kp U       &kp I      &kp O       &kp P
+&kp A       &kp S      &kp D     &kp F   &kp G                     &kp H        &kp J       &kp K      &kp L       &kp MINUS
+&kp Z       &kp X      &kp C     &kp V   &kp B                     &kp N        &kp M       &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LSHIFT  &kp LCTRL  &kp LALT  &JRANG  &lt 2 DEL  &lt 1 RET      &lt 1 SPACE  &lt 2 BSPC  &kp LWIN   &kp TAB     &kp ESC
             >;
         };
 
