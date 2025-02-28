@@ -27,7 +27,8 @@
         JRANG: JRANG {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lt 3 GRAVE>;
+            bindings = <&lt 3 GRAVE>, <&macro_press>;
+
             label = "JRANG";
         };
     };
