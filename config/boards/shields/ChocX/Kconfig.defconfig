@@ -3,30 +3,21 @@ if SHIELD_CHOCX_R
 config ZMK_KEYBOARD_NAME
     default "ChocX_R"
 
-config ZMK_STUDIO
+config ZMK_SPLIT
     default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif  # SHIELD_CHOCX_R
+endif
 
 
-if SHIELD_CHOCX_R || SHIELD_CHOCX_L
+if SHIELD_CHOCX_L
 
 config ZMK_SPLIT
     default y
 
-config SPI
+config ZMK_SPLIT
     default y
 
-config ZMK_POINTING
-    default y
-
-config AZ1UBALL
-    default y
-
-config I2C
-    default y
-
-endif  # SHIELD_CHOCX_R || SHIELD_CHOCX_L
+endif
