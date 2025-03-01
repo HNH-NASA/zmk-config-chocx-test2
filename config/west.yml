@@ -5,7 +5,10 @@ manifest:
     - name: sayu-hub
       url-base: https://github.com/sayu-hub
     - name: caksoylar  # <-- new entry
-      url-base: https://github.com/caksoylar  
+      url-base: https://github.com/caksoylar
+    - name: kzyz  # <-- az1uball driver
+      url-base: https://github.com/kzyz
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +19,9 @@ manifest:
       revision: main
     - name: zmk-rgbled-widget  # <-- new entry
       remote: caksoylar
+      revision: main
+    - name: zmk-az1uball-driver
+      remote: kzyz
       revision: main
   self:
     path: config
