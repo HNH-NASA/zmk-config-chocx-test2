@@ -18,10 +18,7 @@ config AZ1UBALL
 config I2C
     default y
 
-config PWM
-    default y
-
-config LED_PWM
+config SPI
     default y
 
 endif
@@ -32,14 +29,7 @@ if SHIELD_CHOCX_R || SHIELD_CHOCX_L
 config ZMK_SPLIT
     default y
 
-if ZMK_BACKLIGHT
-
-config PWM
+config SPI
     default y
-
-config LED_PWM
-    default y
-
-endif     # ZMK_BACKLIGHT
 
 endif     # SHIELD_CHOCX_R || SHIELD_CHOCX_L
