@@ -1,4 +1,5 @@
 #include "ChocX.dtsi"
+#include <dt-bindings/led/led.h>
 
 &default_transform {
     col-offset = <6>;
@@ -74,10 +75,6 @@
                          LED_COLOR_ID_RED
                          LED_COLOR_ID_BLUE>;
     };
-};
-
-&led_strip {
-    chain-length = <20>;
 };
 
 &trackball_input_listener {
