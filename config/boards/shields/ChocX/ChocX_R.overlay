@@ -40,8 +40,8 @@
         group1 {
             psels = <NRF_PSEL(SPIM_MOSI, 1, 11)>;
             low-power-enable;
-        	};
-    	};
+        };
+    };
 };
 
 &i2c0 {
@@ -74,6 +74,17 @@
         color-mapping = <LED_COLOR_ID_GREEN
                          LED_COLOR_ID_RED
                          LED_COLOR_ID_BLUE>;
+    };
+};
+
+&xiao_i2c {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_FAST>;
+    trackball: trackball@a {
+        compatible = "palette,az1uball";
+        reg = <0x0A>;
+	default-mode = "mouse";
+	sensitivity = "8x";
     };
 };
 
