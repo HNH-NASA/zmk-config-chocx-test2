@@ -2,12 +2,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: caksoylar  # <-- new entry
+      url-base: https://github.com/caksoylar
+    - name: kzyz  # <-- az1uball driver
+      url-base: https://github.com/kzyz
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    - name: zmk-rgbled-widget  # <-- new entry
+      remote: caksoylar
+      revision: main
+    - name: zmk_az1uball_driver
+      remote: kzyz
+      revision: main
   self:
     path: config
