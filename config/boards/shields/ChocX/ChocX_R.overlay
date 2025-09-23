@@ -84,7 +84,7 @@
         compatible = "palette,az1uball";
         reg = <0x0A>;
 	default-mode = "mouse";
-	sensitivity = "8x";
+	sensitivity = "1x";
     };
 };
 
