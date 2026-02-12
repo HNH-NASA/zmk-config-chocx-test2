@@ -185,10 +185,10 @@
             // |      |      |      |      |      |      |          |      |      |      |      |       |
 
             bindings = <
-&kp F1  &kp F3          &kp F4    &kp F5           &kp F6                      &kp F2     &kp F7    &kp F8    &kp F9    &kp F10
-&trans  &msc SCRL_LEFT  &kp UP    &msc SCRL_RIGHT  &msc SCRL_UP                &kp LC(C)  &mkp MB1  &mkp MB3  &mkp MB2  &kp F11
-&trans  &kp LEFT        &kp DOWN  &kp RIGHT        &msc SCRL_DOWN              &kp LC(V)  &mkp MB4  &mkp MB5  &trans    &kp F12
-&trans  &trans          &trans    &trans           &trans          &trans      &trans     &trans    &trans    &trans    &trans
+&kp F1  &kp F3          &kp F4    &kp F5           &kp F6                      &kp F2       &kp F7    &kp F8    &kp F9    &kp F10
+&trans  &msc SCRL_LEFT  &kp UP    &msc SCRL_RIGHT  &msc SCRL_UP                &kp K_COPY   &mkp MB1  &mkp MB3  &mkp MB2  &kp F11
+&trans  &kp LEFT        &kp DOWN  &kp RIGHT        &msc SCRL_DOWN              &kp K_PASTE  &mkp MB4  &mkp MB5  &trans    &kp F12
+&trans  &trans          &trans    &trans           &trans          &trans      &trans       &trans    &trans    &trans    &trans
             >;
         };
 
